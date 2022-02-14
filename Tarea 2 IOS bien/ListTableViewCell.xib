@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="Tarea_2_IOS_bien" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-LG-XXp">
+                        <rect key="frame" x="22.5" y="3" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5zd-Tn-81K"/>
+                            <constraint firstAttribute="width" constant="120" id="Bk2-Dj-WdQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2j-OX-hiM">
+                        <rect key="frame" x="186" y="3" width="123" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="123" id="fma-Nt-dKf"/>
+                            <constraint firstAttribute="height" constant="21" id="ytm-y3-HJ2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workstation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="854-Xe-9hL">
+                        <rect key="frame" x="186" y="24" width="120" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="ACo-n9-gOQ"/>
+                            <constraint firstAttribute="height" constant="21" id="bef-LA-GK6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="854-Xe-9hL" firstAttribute="top" secondItem="bQ6-LG-XXp" secondAttribute="bottom" id="1FX-2O-XCB"/>
+                    <constraint firstItem="bQ6-LG-XXp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-88" id="4gw-j9-7JG"/>
+                    <constraint firstItem="bQ6-LG-XXp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="KAW-5r-38k"/>
+                    <constraint firstItem="e2j-OX-hiM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="LTG-5m-aCb"/>
+                    <constraint firstItem="854-Xe-9hL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="75.5" id="LjB-gF-XD3"/>
+                    <constraint firstItem="e2j-OX-hiM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="77" id="s9u-cN-mep"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="AccentColor"/>
+            <connections>
+                <outlet property="employeeName" destination="bQ6-LG-XXp" id="Xzy-TT-hDu"/>
+                <outlet property="employeeSalary" destination="e2j-OX-hiM" id="ovA-Wj-rFn"/>
+                <outlet property="employeeWorkstation" destination="854-Xe-9hL" id="dfb-Rc-THo"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
